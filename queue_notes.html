@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queue Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .structure {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Queue Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a Queue?</h2>
+
+        <p>
+            A queue is a linear data structure that follows
+            <b>FIFO (First In, First Out)</b>.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Queue Operations</h2>
+
+        <ul>
+            <li><b>Enqueue:</b> Adds an element to the queue.</li>
+            <li><b>Dequeue:</b> Removes an element from the queue.</li>
+            <li><b>Front:</b> Shows the first element.</li>
+            <li><b>Rear:</b> Shows the last element.</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Queue Structure</h2>
+
+        <div class="structure">
+            Front → 10 → 20 → 30 → Rear
+        </div>
+
+        <p>
+            The first inserted element is removed first.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>4. C++ Example</h2>
+
+        <pre class="code-box">
+#include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main()
+{
+    queue&lt;int&gt; q;
+
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    cout &lt;&lt; "Front element: " &lt;&lt; q.front();
+
+    q.pop();
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Applications of Queue</h2>
+
+        <ul>
+            <li>CPU scheduling</li>
+            <li>Printer scheduling</li>
+            <li>Breadth First Search (BFS)</li>
+            <li>Customer service systems</li>
+            <li>Data buffering</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

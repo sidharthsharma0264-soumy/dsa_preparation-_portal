@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .graph {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Graph Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a Graph?</h2>
+
+        <p>
+            A graph is a non-linear data structure consisting of
+            vertices (nodes) and edges that connect them.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Types of Graphs</h2>
+
+        <ul>
+            <li>Directed Graph</li>
+            <li>Undirected Graph</li>
+            <li>Weighted Graph</li>
+            <li>Unweighted Graph</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Graph Representation</h2>
+
+        <ul>
+            <li>Adjacency Matrix</li>
+            <li>Adjacency List</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>4. Basic Graph Structure</h2>
+
+        <div class="graph">
+            A — B — C
+            <br>
+            | &nbsp;&nbsp;&nbsp;&nbsp;|
+            <br>
+            D — E
+        </div>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Important Algorithms</h2>
+
+        <ul>
+            <li>Breadth First Search (BFS)</li>
+            <li>Depth First Search (DFS)</li>
+            <li>Dijkstra's Algorithm</li>
+            <li>Prim's Algorithm</li>
+            <li>Kruskal's Algorithm</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>6. C++ Example</h2>
+
+        <pre class="code-box">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; graph[5];
+
+    graph[0].push_back(1);
+    graph[1].push_back(2);
+
+    return 0;
+}
+        </pre>
+    </div>
+
+</div>
+
+</body>
+</html>

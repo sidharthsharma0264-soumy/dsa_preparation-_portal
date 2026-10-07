@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linked List Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .structure {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Linked List Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a Linked List?</h2>
+
+        <p>
+            A linked list is a linear data structure where elements are stored
+            in nodes. Each node contains data and a link to the next node.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Types of Linked List</h2>
+
+        <ul>
+            <li>Singly Linked List</li>
+            <li>Doubly Linked List</li>
+            <li>Circular Linked List</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Basic Structure</h2>
+
+        <div class="structure">
+            Data → Next → Data → Next → NULL
+        </div>
+
+        <p>
+            Each node stores data and a pointer to the next node.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>4. C++ Example</h2>
+
+        <pre class="code-box">
+struct Node
+{
+    int data;
+    Node* next;
+};
+
+int main()
+{
+    Node* first = new Node();
+
+    first-&gt;data = 10;
+    first-&gt;next = NULL;
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Important Operations</h2>
+
+        <ul>
+            <li><b>Insertion</b> – Add a new node.</li>
+            <li><b>Deletion</b> – Remove a node.</li>
+            <li><b>Traversal</b> – Visit all nodes.</li>
+            <li><b>Searching</b> – Find an element.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - DSA Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="card" style="max-width: 400px; margin: auto;">
+
+        <h1>Login</h1>
+
+        <p>Login to continue your DSA preparation.</p>
+
+        <form onsubmit="loginUser(event)">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+                style="width: 90%; padding: 14px; margin: 10px; font-size: 16px;"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+                style="width: 90%; padding: 14px; margin: 10px; font-size: 16px;"
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p style="margin-top: 20px;">
+            Don't have an account?
+            <a href="/register">Register here</a>
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function loginUser(event) {
+
+    event.preventDefault();
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username !== "" && password !== "") {
+
+        alert("Login successful!");
+
+        window.location.href = "/dashboard";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

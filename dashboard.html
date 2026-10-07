@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | DSA Preparation Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+
+<!-- DASHBOARD HERO -->
+<section class="hero">
+
+    <div class="hero-badge">
+        ⚡ YOUR LEARNING DASHBOARD
+    </div>
+
+    <h1>
+        Welcome to Your
+        <span>DSA Journey.</span>
+    </h1>
+
+    <p>
+        Learn Data Structures & Algorithms, practice important concepts,
+        watch lectures and track your preparation progress.
+    </p>
+
+    <div style="margin-top: 30px;">
+        <a href="/topics">
+            <button>Start Learning →</button>
+        </a>
+
+        <a href="/progress">
+            <button class="secondary-btn">View Progress</button>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- 3D DASHBOARD CARDS -->
+<section class="section">
+
+    <div class="section-title">
+        <h2>Your Preparation Hub</h2>
+        <p>Everything you need for your DSA preparation.</p>
+    </div>
+
+    <div class="card-grid">
+
+        <!-- TOPICS -->
+        <div class="card">
+            <div style="font-size:45px;">🧠</div>
+
+            <h3>DSA Topics</h3>
+
+            <p>
+                Explore important Data Structures and Algorithms
+                from basics to advanced concepts.
+            </p>
+
+            <a href="/topics">
+                <button>Explore Topics →</button>
+            </a>
+        </div>
+
+
+        <!-- NOTES -->
+        <div class="card">
+            <div style="font-size:45px;">📚</div>
+
+            <h3>Study Notes</h3>
+
+            <p>
+                Revise concepts with simple and structured
+                notes designed for quick learning.
+            </p>
+
+            <a href="/notes">
+                <button>Open Notes →</button>
+            </a>
+        </div>
+
+
+        <!-- VIDEOS -->
+        <div class="card">
+            <div style="font-size:45px;">🎥</div>
+
+            <h3>Video Learning</h3>
+
+            <p>
+                Learn difficult DSA concepts through selected
+                video lectures and explanations.
+            </p>
+
+            <a href="/videos">
+                <button>Watch Videos →</button>
+            </a>
+        </div>
+
+
+        <!-- PROGRESS -->
+        <div class="card">
+            <div style="font-size:45px;">📊</div>
+
+            <h3>Track Progress</h3>
+
+            <p>
+                Monitor your preparation and see how much
+                of your DSA journey you have completed.
+            </p>
+
+            <a href="/progress">
+                <button>Check Progress →</button>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PREPARATION ROADMAP -->
+<section class="section">
+
+    <div class="section-title">
+        <h2>DSA Preparation Path</h2>
+        <p>A simple path to build strong problem-solving skills.</p>
+    </div>
+
+
+    <div class="card-grid">
+
+        <div class="card">
+            <div style="font-size:38px;">01</div>
+
+            <h3>Learn Concepts</h3>
+
+            <p>
+                Understand the fundamentals of arrays, strings,
+                linked lists, stacks, queues and more.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div style="font-size:38px;">02</div>
+
+            <h3>Understand Algorithms</h3>
+
+            <p>
+                Learn searching, sorting, trees, graphs,
+                recursion and dynamic programming.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div style="font-size:38px;">03</div>
+
+            <h3>Practice</h3>
+
+            <p>
+                Improve your problem-solving ability by
+                practicing coding questions regularly.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div style="font-size:38px;">04</div>
+
+            <h3>Track & Improve</h3>
+
+            <p>
+                Track your preparation, identify weak areas
+                and continuously improve your skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="hero" style="margin-top:40px;">
+
+    <div class="hero-badge">
+        🎯 PLACEMENT PREPARATION
+    </div>
+
+    <h2>
+        Stay Consistent.
+        <span>Keep Building.</span>
+    </h2>
+
+    <p>
+        Every concept you learn today brings you one step
+        closer to your dream placement.
+    </p>
+
+    <div style="margin-top:25px;">
+        <a href="/topics">
+            <button>Continue Preparing →</button>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <p>© 2026 DSA Preparation Portal</p>
+
+    <p>
+        This webpage is designed by
+        <strong>Soumy Sharma.</strong>
+    </p>
+
+</footer>
+
+</body>
+</html>

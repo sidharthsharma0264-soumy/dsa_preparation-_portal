@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Notes - DSA Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .notes-container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 30px auto 60px;
+        }
+
+        .note-card {
+            background: #ffffff;
+            color: #111827;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .note-card h2 {
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .note-card p {
+            color: #333;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .note-card li {
+            color: #333;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .array-box {
+            display: flex;
+            justify-content: center;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .array-item {
+            background: #38bdf8;
+            color: #111827;
+            padding: 15px 22px;
+            margin: 5px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .index {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        pre {
+            background: #111827;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 15px;
+        }
+
+        .complexity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .complexity-table th,
+        .complexity-table td {
+            border: 1px solid #bbb;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .complexity-table th {
+            background: #38bdf8;
+            color: #111827;
+        }
+
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="text-align:center; margin-top:30px;">
+    Array Notes
+</h1>
+
+<div class="notes-container">
+
+    <!-- INTRODUCTION -->
+    <div class="note-card">
+
+        <h2>1. What is an Array?</h2>
+
+        <p>
+            An array is a linear data structure that stores multiple
+            elements of the same data type in contiguous memory locations.
+        </p>
+
+        <p>
+            Each element can be accessed using an index. In most
+            programming languages, array indexing starts from 0.
+        </p>
+
+    </div>
+
+
+    <!-- REPRESENTATION -->
+    <div class="note-card">
+
+        <h2>2. Array Representation</h2>
+
+        <p>Example:</p>
+
+        <div class="array-box">
+
+            <div>
+                <div class="array-item">10</div>
+                <div class="index">Index 0</div>
+            </div>
+
+            <div>
+                <div class="array-item">20</div>
+                <div class="index">Index 1</div>
+            </div>
+
+            <div>
+                <div class="array-item">30</div>
+                <div class="index">Index 2</div>
+            </div>
+
+            <div>
+                <div class="array-item">40</div>
+                <div class="index">Index 3</div>
+            </div>
+
+            <div>
+                <div class="array-item">50</div>
+                <div class="index">Index 4</div>
+            </div>
+
+        </div>
+
+        <p>
+            Here, the array contains 5 elements and the valid indexes
+            are 0 to 4.
+        </p>
+
+    </div>
+
+
+    <!-- DECLARATION -->
+    <div class="note-card">
+
+        <h2>3. Array Declaration in C++</h2>
+
+        <pre>
+int arr[5];
+
+int numbers[5] = {10, 20, 30, 40, 50};
+        </pre>
+
+    </div>
+
+
+    <!-- OPERATIONS -->
+    <div class="note-card">
+
+        <h2>4. Important Array Operations</h2>
+
+        <ul>
+            <li><b>Traversal:</b> Visiting every element of the array.</li>
+
+            <li><b>Insertion:</b> Adding an element at a particular position.</li>
+
+            <li><b>Deletion:</b> Removing an element from the array.</li>
+
+            <li><b>Searching:</b> Finding an element in the array.</li>
+
+            <li><b>Sorting:</b> Arranging elements in ascending or descending order.</li>
+
+            <li><b>Updating:</b> Changing the value of an existing element.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- TRAVERSAL -->
+    <div class="note-card">
+
+        <h2>5. Array Traversal</h2>
+
+        <p>
+            Traversal means visiting each element of an array one by one.
+        </p>
+
+        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    for(int i = 0; i &lt; 5; i++)
+    {
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    }
+
+    return 0;
+}
+        </pre>
+
+        <p><b>Output:</b></p>
+
+        <pre>
+10 20 30 40 50
+        </pre>
+
+    </div>
+
+
+    <!-- SEARCHING -->
+    <div class="note-card">
+
+        <h2>6. Searching in an Array</h2>
+
+        <p>
+            Searching means finding whether a particular element exists
+            in the array.
+        </p>
+
+        <p>
+            A simple method is <b>Linear Search</b>, where we check each
+            element one by one.
+        </p>
+
+        <pre>
+int arr[5] = {10, 20, 30, 40, 50};
+
+int key = 30;
+
+for(int i = 0; i &lt; 5; i++)
+{
+    if(arr[i] == key)
+    {
+        cout &lt;&lt; "Element found";
+        break;
+    }
+}
+        </pre>
+
+    </div>
+
+
+    <!-- COMPLEXITY -->
+    <div class="note-card">
+
+        <h2>7. Time Complexity</h2>
+
+        <table class="complexity-table">
+
+            <tr>
+                <th>Operation</th>
+                <th>Time Complexity</th>
+            </tr>
+
+            <tr>
+                <td>Access</td>
+                <td>O(1)</td>
+            </tr>
+
+            <tr>
+                <td>Search</td>
+                <td>O(n)</td>
+            </tr>
+
+            <tr>
+                <td>Insertion</td>
+                <td>O(n)</td>
+            </tr>
+
+            <tr>
+                <td>Deletion</td>
+                <td>O(n)</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- ADVANTAGES -->
+    <div class="note-card">
+
+        <h2>8. Advantages of Arrays</h2>
+
+        <ul>
+            <li>Fast access using index.</li>
+            <li>Easy to traverse.</li>
+            <li>Simple and easy to implement.</li>
+            <li>Efficient memory access due to contiguous storage.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- DISADVANTAGES -->
+    <div class="note-card">
+
+        <h2>9. Disadvantages of Arrays</h2>
+
+        <ul>
+            <li>Fixed-size arrays cannot easily grow or shrink.</li>
+            <li>Insertion and deletion can require shifting elements.</li>
+            <li>Unused allocated space may be wasted.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- QUESTIONS -->
+    <div class="note-card">
+
+        <h2>10. Important Practice Questions</h2>
+
+        <ol>
+            <li>Find the maximum element in an array.</li>
+            <li>Find the minimum element in an array.</li>
+            <li>Reverse an array.</li>
+            <li>Find the second largest element.</li>
+            <li>Search for an element using Linear Search.</li>
+            <li>Sort an array.</li>
+            <li>Find duplicate elements in an array.</li>
+        </ol>
+
+    </div>
+
+
+    <!-- BACK BUTTON -->
+
+    <button class="back-button"
+            onclick="window.location.href='/notes'">
+        ← Back to DSA Notes
+    </button>
+
+</div>
+
+</body>
+</html>

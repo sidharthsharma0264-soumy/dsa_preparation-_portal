@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stack Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .structure {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Stack Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a Stack?</h2>
+
+        <p>
+            A stack is a linear data structure that follows
+            <b>LIFO (Last In, First Out)</b>.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Stack Operations</h2>
+
+        <ul>
+            <li><b>Push:</b> Adds an element to the stack.</li>
+            <li><b>Pop:</b> Removes the top element.</li>
+            <li><b>Peek:</b> Shows the top element.</li>
+            <li><b>isEmpty:</b> Checks whether the stack is empty.</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Stack Structure</h2>
+
+        <div class="structure">
+            TOP → 30 → 20 → 10
+        </div>
+
+        <p>
+            The last inserted element is removed first.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>4. C++ Example</h2>
+
+        <pre class="code-box">
+#include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+int main()
+{
+    stack&lt;int&gt; s;
+
+    s.push(10);
+    s.push(20);
+    s.push(30);
+
+    cout &lt;&lt; "Top element: " &lt;&lt; s.top();
+
+    s.pop();
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Applications of Stack</h2>
+
+        <ul>
+            <li>Function calls</li>
+            <li>Undo and Redo operations</li>
+            <li>Expression evaluation</li>
+            <li>Parentheses matching</li>
+            <li>Backtracking</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

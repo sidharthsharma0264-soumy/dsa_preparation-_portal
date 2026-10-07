@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Programming Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Dynamic Programming Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is Dynamic Programming?</h2>
+
+        <p>
+            Dynamic Programming (DP) is an algorithmic technique used to
+            solve complex problems by breaking them into smaller
+            overlapping subproblems and storing their results.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Main Concepts</h2>
+
+        <ul>
+            <li>Overlapping Subproblems</li>
+            <li>Optimal Substructure</li>
+            <li>Memoization</li>
+            <li>Tabulation</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Memoization</h2>
+
+        <p>
+            Memoization is a top-down approach where results of previously
+            solved subproblems are stored and reused.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>4. Tabulation</h2>
+
+        <p>
+            Tabulation is a bottom-up approach where a table is used to
+            calculate solutions starting from the smallest subproblem.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Common DP Problems</h2>
+
+        <ul>
+            <li>Fibonacci Series</li>
+            <li>0/1 Knapsack</li>
+            <li>Longest Common Subsequence</li>
+            <li>Longest Increasing Subsequence</li>
+            <li>Coin Change</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>6. C++ Example - Fibonacci</h2>
+
+        <pre class="code-box">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    int n = 10;
+    int dp[11];
+
+    dp[0] = 0;
+    dp[1] = 1;
+
+    for(int i = 2; i &lt;= n; i++)
+    {
+        dp[i] = dp[i-1] + dp[i-2];
+    }
+
+    cout &lt;&lt; dp[n];
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="note-box">
+        <h2>7. Advantages of Dynamic Programming</h2>
+
+        <ul>
+            <li>Reduces repeated calculations</li>
+            <li>Improves algorithm efficiency</li>
+            <li>Useful for optimization problems</li>
+            <li>Helps solve complex problems efficiently</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

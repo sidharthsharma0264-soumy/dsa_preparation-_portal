@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .tree {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>Tree Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a Tree?</h2>
+
+        <p>
+            A tree is a non-linear data structure that represents
+            hierarchical relationships between elements.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. Important Terms</h2>
+
+        <ul>
+            <li><b>Root:</b> The topmost node.</li>
+            <li><b>Parent:</b> A node that has children.</li>
+            <li><b>Child:</b> A node connected below another node.</li>
+            <li><b>Leaf:</b> A node with no children.</li>
+            <li><b>Height:</b> The longest path from a node to a leaf.</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Types of Trees</h2>
+
+        <ul>
+            <li>Binary Tree</li>
+            <li>Binary Search Tree</li>
+            <li>AVL Tree</li>
+            <li>Heap</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>4. Basic Tree Structure</h2>
+
+        <div class="tree">
+                10
+               /  \
+              5    15
+        </div>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Tree Traversals</h2>
+
+        <ul>
+            <li>Preorder Traversal</li>
+            <li>Inorder Traversal</li>
+            <li>Postorder Traversal</li>
+            <li>Level Order Traversal</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>6. C++ Example</h2>
+
+        <pre class="code-box">
+struct Node
+{
+    int data;
+    Node* left;
+    Node* right;
+};
+        </pre>
+    </div>
+
+</div>
+
+</body>
+</html>

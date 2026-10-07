@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - DSA Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="card" style="max-width: 400px; margin: auto;">
+
+        <h1>Create Account</h1>
+
+        <p>Register to start your DSA preparation.</p>
+
+        <form onsubmit="registerUser(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+                style="width: 90%; padding: 14px; margin: 8px; font-size: 16px;"
+            >
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+                style="width: 90%; padding: 14px; margin: 8px; font-size: 16px;"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+                style="width: 90%; padding: 14px; margin: 8px; font-size: 16px;"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+                style="width: 90%; padding: 14px; margin: 8px; font-size: 16px;"
+            >
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p style="margin-top: 20px;">
+            Already have an account?
+            <a href="/login">Login here</a>
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function registerUser(event) {
+
+    event.preventDefault();
+
+    alert("Registration successful!");
+
+    window.location.href = "/login";
+
+}
+
+</script>
+
+</body>
+</html>

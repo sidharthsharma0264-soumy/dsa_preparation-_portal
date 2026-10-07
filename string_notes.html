@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Notes</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .note-box {
+            background: white;
+            color: #111827;
+            padding: 28px;
+            margin: 25px auto;
+            border-radius: 14px;
+            max-width: 1050px;
+            text-align: left;
+        }
+
+        .note-box h2 {
+            color: #111827;
+            margin-bottom: 15px;
+        }
+
+        .note-box p,
+        .note-box li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .note-box ul {
+            padding-left: 25px;
+        }
+
+        .code-box {
+            background: #111827;
+            color: white;
+            padding: 22px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+
+    <h1>String Notes</h1>
+
+    <div class="note-box">
+        <h2>1. What is a String?</h2>
+
+        <p>
+            A string is a sequence of characters used to store and represent
+            text. In C++, strings can be created using the
+            <b>string</b> data type.
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>2. String Declaration</h2>
+
+        <div class="code-box">
+            string name = "DSA Portal";
+        </div>
+
+        <p>
+            Here, <b>name</b> stores the string "DSA Portal".
+        </p>
+    </div>
+
+    <div class="note-box">
+        <h2>3. Common String Operations</h2>
+
+        <ul>
+            <li>Finding string length</li>
+            <li>Concatenation</li>
+            <li>Comparing strings</li>
+            <li>Accessing characters</li>
+            <li>Searching characters</li>
+        </ul>
+    </div>
+
+    <div class="note-box">
+        <h2>4. C++ Example</h2>
+
+        <pre class="code-box">
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main()
+{
+    string name = "DSA";
+
+    cout &lt;&lt; "String: " &lt;&lt; name &lt;&lt; endl;
+    cout &lt;&lt; "Length: " &lt;&lt; name.length();
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="note-box">
+        <h2>5. Important String Functions</h2>
+
+        <ul>
+            <li><b>length()</b> – Returns the length of a string.</li>
+            <li><b>size()</b> – Returns the number of characters.</li>
+            <li><b>substr()</b> – Extracts a part of a string.</li>
+            <li><b>find()</b> – Searches for a character or substring.</li>
+            <li><b>append()</b> – Adds another string.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

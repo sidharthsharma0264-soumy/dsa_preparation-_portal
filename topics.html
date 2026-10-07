@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSA Topics</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <h2>DSA Portal</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/topics">Topics</a>
+        <a href="/notes">Notes</a>
+        <a href="/videos">Videos</a>
+        <a href="/progress">Progress</a>
+        <a href="/about">About</a>
+    </div>
+</nav>
+
+
+<div class="hero">
+
+    <h1>DSA Topics</h1>
+
+    <p>
+        Select a topic to study its notes.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Arrays</h2>
+            <p>Learn arrays and their basic operations.</p>
+            <button onclick="window.location.href='/array-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Strings</h2>
+            <p>Learn string concepts and operations.</p>
+            <button onclick="window.location.href='/string-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Linked List</h2>
+            <p>Learn nodes, insertion, deletion and traversal.</p>
+            <button onclick="window.location.href='/linked-list-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Stack</h2>
+            <p>Learn LIFO and stack operations.</p>
+            <button onclick="window.location.href='/stack-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Queue</h2>
+            <p>Learn FIFO and queue operations.</p>
+            <button onclick="window.location.href='/queue-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Tree</h2>
+            <p>Learn tree structures and traversals.</p>
+            <button onclick="window.location.href='/tree-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Graph</h2>
+            <p>Learn graphs, BFS and DFS.</p>
+            <button onclick="window.location.href='/graph-notes'">
+                View Notes
+            </button>
+        </div>
+
+
+        <div class="card">
+            <h2>Dynamic Programming</h2>
+            <p>Learn DP concepts and common problems.</p>
+            <button onclick="window.location.href='/dp-notes'">
+                View Notes
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
